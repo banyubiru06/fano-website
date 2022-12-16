@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+        :root{
+    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+    scrollbar-width: thin !important;
+    --white:#fff;
+    --black:#131417;
+    --dark:#131313;
+    --gray:rgba(255,255,255,0.6);
+    --lite:rgba(1,1,1,0.6);
+    --cream:#f9f9f9;
+    --primary:#ffa61b;
+    --primary_lite:#ff3e55;
+    --secondary:#6382f7;
+    --secondary_dark:#15265b;
+    --blue:#051135;
+    --default:'Mukta', sans-serif;
+    --title:'Montserrat', sans-serif;
+    --cursive:'Dancing Script', cursive;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden !important;
+    font-family:var(--default);
+}
+
+a{
+    text-decoration:none !important;
+    min-width: fit-content;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+a, button, i{
+    transition:0.5s;
+}
+
+em{
+    font-style:normal;
+    color:var(--primary);
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.flex-content{
+    width:100%;
+    position:relative;
+}
+
+.title{
+    font-family:var(--title);
+    color:var(--blue);
+}
+
+.padding_1x{
+    padding:1rem;
+}
+
+.padding_2x{
+    padding:2rem;
+}
+
+.padding_3x{
+    padding:3rem;
+}
+
+.big{
+    font-size:4em;
+}
+
+.medium{
+    font-size:2.5rem;
+}
+
+.small{
+    font-size:1.5em;
+}
+        
+        /*FOOTER*/
+footer{
+    display:flex;
+    align-items:top;
+    justify-content:center;
+    background-color:var(--blue);
+    color:var(--white);
+    padding-top:3rem;
+}
+
+footer .title{
+    color:var(--white);
+}
+
+footer a{
+    display:block;
+    color:var(--gray);
+    margin:0.3rem 0;
+}
+
+footer a:hover{
+    color:var(--white);
+}
+
+footer .flex-content:not(:first-child) a:before{
+    content:"\f0da";
+    font-family:"FontAwesome";
+    margin-right:0.3rem;
+}
+
+footer .social_icons a{
+    margin:0.3rem;
+    padding:0.1rem 0.6rem;
+    border-radius:50%;
+    border:1px solid var(--gray);
+    display:inline-block;
+    text-align:center;
+}
+
+footer .social_icons a:hover{
+    background-color:var(--gray);
+    color:var(--blue);
+}
+
+footer p{
+    color:var(--gray);
+}
+
+footer fieldset{
+    padding:0;
+    margin:0;
+}
+
+footer fieldset .flex-content:nth-child(2){
+    width:23%;
+}
+
+footer input{
+    padding:1rem;
+    border:0;
+    font-weight:600;
+}
+
+footer .btn1{
+    border-radius:0;
+    text-align:center;
+}
+
+footer .btn1 .fa{
+    left:0;
+}
+
+.sub_footer{
+    background-color:var(--secondary_dark);
+    text-align:center;
+    color:var(--gray);
+    padding:0.01rem;
+}
+
+@media (max-width:920px){
+    footer{
+        flex-wrap:wrap;
+    }
+    
+    footer fieldset{
+        flex-wrap:nowrap !important;
+    }
+    
+    footer fieldset .btn1{
+        padding:1rem;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        
+       
+    </body>
+
+    <!--FOOTER-->
+<footer>
+    <section class="flex-content padding_2x">
+        <h3 class="title small">Welcome to my website</h3>
+        <p>Website ini berisikan profil dan biodata diri saya. Pengembangan selanjutnya akan menjadi website portfolio terkait project yang telah saya kerjakan.</p>
+    </section>
+    
+    <section class="flex-content padding_2x">
+        <h3 class="title small">Other Links</h3>
+        <a href="profile.html">Profile</a>
+        <a href="biodata.html">Biodata Diri</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="buku-tamu.html">Buku Tamu</a>
+    </section>
+    
+    <!-- <section class="flex-content padding_2x">
+        <h3 class="title small">Kontak Kami</h3>
+        <fieldset class="flex">
+            <input type="email" name="email" placeholder="Email address" class="flex-content" required="" />
+            <button class="btn1 flex-content"><i class="fa fa-paper-plane"></i></button>
+        </fieldset>
+    </section> -->
+
+</footer>
+<div class="sub_footer">
+<p> 2022 © All rights reserved by Fano</p>
+</div>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fano Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+        body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+
+		main {
+			position: fixed;
+			top: 50px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 230px; 
+			right: 0;
+			overflow: auto; 
+			background: #fff;
+		}
+
+
+        p {
+			color: #555;
+		}
+        </style>
+
+    </head>
+
+    <frameset cols="150,*">
+
+        <frame src="menu.html">
+        
+        <frameset rows="100,*,100">
+        <frame src="header.html">
+        <frame src="description.html">
+        <frame src="footer.html">
+    </frameset>
+  
+    <body>
+
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>
